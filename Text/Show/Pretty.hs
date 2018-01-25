@@ -32,9 +32,6 @@ module Text.Show.Pretty
     -- * Rendering values to Html
   , valToHtml, HtmlOpts(..), defaultHtmlOpts, htmlPage, Html(..)
 
-    -- * Get location of data files
-  , getDataDir
-
     -- * Deprecated
   , ppValue
   ) where
@@ -46,7 +43,6 @@ import Text.Show.PrettyVal
 import Text.Show.Html
 import Data.Foldable(Foldable,toList)
 import Language.Haskell.Lexer(rmSpace,lexerPass0)
-import Paths_pretty_show (getDataDir)
 
 #if MIN_VERSION_base(4,11,0)
 import Prelude hiding ( (<>) )
